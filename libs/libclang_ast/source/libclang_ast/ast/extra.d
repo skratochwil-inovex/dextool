@@ -30,91 +30,80 @@ abstract class Extra : Node {
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor_, v);
     }
 }
 
+
 final class ModuleImportDecl : Extra {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class TypeAliasTemplateDecl : Extra {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class StaticAssert : Extra {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class FriendDecl : Extra {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class ConceptDecl : Extra {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class OverloadCandidate : Extra {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
+

@@ -26,7 +26,7 @@ set(dextool_mutate_database_flags
 -I${CMAKE_SOURCE_DIR}/libs/clang/source
 -I${CMAKE_SOURCE_DIR}/libs/libclang_ast/source
 -I${CMAKE_SOURCE_DIR}/libs/dextool/source
--I${LIBCLANG_INC}
+${LIBCLANG_INC}
 -I${CMAKE_SOURCE_DIR}/vendor/colorlog/source
 -I${CMAKE_SOURCE_DIR}/vendor/d2sqlite3/source
 -I${CMAKE_SOURCE_DIR}/vendor/miniorm/source
@@ -45,7 +45,7 @@ set(dextool_mutate_analyze_flags
 -I${CMAKE_SOURCE_DIR}/libs/libclang_ast/source
 -I${CMAKE_SOURCE_DIR}/libs/dextool/source
 -I${CMAKE_SOURCE_DIR}/libs/dextool_clang_extensions/source
--I${LIBCLANG_INC}
+${LIBCLANG_INC}
 -I${CMAKE_SOURCE_DIR}/plugin/source
 -I${CMAKE_SOURCE_DIR}/source
 -I${CMAKE_SOURCE_DIR}/vendor/automem/source
@@ -69,7 +69,7 @@ set(flags "
 -I${CMAKE_SOURCE_DIR}/libs/libclang_ast/source
 -I${CMAKE_SOURCE_DIR}/libs/dextool/source
 -I${CMAKE_SOURCE_DIR}/libs/dextool_clang_extensions/source
--I${LIBCLANG_INC}
+${LIBCLANG_INC}
 -I${CMAKE_SOURCE_DIR}/plugin/source
 -I${CMAKE_SOURCE_DIR}/source
 -I${CMAKE_SOURCE_DIR}/vendor/arsd

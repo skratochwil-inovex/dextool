@@ -30,63 +30,56 @@ abstract class Preprocessor : Node {
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor_, v);
     }
 }
 
+
 final class PreprocessingDirective : Preprocessor {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class MacroDefinition : Preprocessor {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class MacroExpansion : Preprocessor {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class InclusionDirective : Preprocessor {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
+

@@ -132,7 +132,7 @@ string wrapCursor(alias visitor, alias cursor)(immutable(string)[] cases) {
     string result;
 
     foreach (case_; cases) {
-        result ~= format("case CXCursorKind.%s: scope wrapped = new %s(%s); %s.visit(wrapped); break;\n",
+        result ~= format("case CXCursorKind.CXCursor_%s: scope wrapped = new %s(%s); %s.visit(wrapped); break;\n",
                 case_, makeNodeClassName(case_), cursor.stringof, visitor.stringof);
     }
     return result;

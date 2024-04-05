@@ -4,6 +4,10 @@ Fixes
 
  * Bindings updated to support llvm-16 and 17.
  * Fix failed parsing of internal compiler flags when the console languages isn't English.
+ * Replace D bindings for libclang with ImportC. This should both make dextool
+   almost, automatically work with any future version of LLVM/Clang as long as
+   no existing C API functions are removed and reduce annoying bugs wherein the
+   enum's have changed.
 
 Fixes for dextool mutate
 

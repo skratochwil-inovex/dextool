@@ -299,7 +299,7 @@ final class ClassVisitor : Visitor {
         }
     }
 
-    override void visit(scope const CxxMethod v) @trusted {
+    override void visit(scope const CXXMethod v) @trusted {
         mixin(mixinNodeLog!());
 
         auto tmp = analyzeCxxMethod(v, container, indent);

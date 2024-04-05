@@ -30,161 +30,104 @@ abstract class Reference : Node {
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor_, v);
     }
 }
 
-final class ObjCSuperClassRef : Reference {
-    import clang.Cursor : Cursor;
-
-    this(scope Cursor cursor) @safe {
-        super(cursor);
-    }
-
-    override void accept(scope Visitor v) @safe const scope {
-        static import libclang_ast.ast;
-
-        libclang_ast.ast.accept(cursor, v);
-    }
-}
-
-final class ObjCProtocolRef : Reference {
-    import clang.Cursor : Cursor;
-
-    this(scope Cursor cursor) @safe {
-        super(cursor);
-    }
-
-    override void accept(scope Visitor v) @safe const scope {
-        static import libclang_ast.ast;
-
-        libclang_ast.ast.accept(cursor, v);
-    }
-}
-
-final class ObjCClassRef : Reference {
-    import clang.Cursor : Cursor;
-
-    this(scope Cursor cursor) @safe {
-        super(cursor);
-    }
-
-    override void accept(scope Visitor v) @safe const scope {
-        static import libclang_ast.ast;
-
-        libclang_ast.ast.accept(cursor, v);
-    }
-}
 
 final class TypeRef : Reference {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
-final class CxxBaseSpecifier : Reference {
+final class CXXBaseSpecifier : Reference {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class TemplateRef : Reference {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class NamespaceRef : Reference {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class MemberRef : Reference {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class LabelRef : Reference {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class OverloadedDeclRef : Reference {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
 
 final class VariableRef : Reference {
     import clang.Cursor : Cursor;
-
     this(scope Cursor cursor) @safe {
         super(cursor);
     }
 
     override void accept(scope Visitor v) @safe const scope {
         static import libclang_ast.ast;
-
         libclang_ast.ast.accept(cursor, v);
     }
 }
+
